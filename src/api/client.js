@@ -15,11 +15,20 @@ class ApiClient {
       const response = await fetch(url, config);
       
       if (!response.ok) {
+        // No lanzar error para 500, solo para otros códigos
+        if (response.status === 500) {
+          console.warn(`API returned 500 for ${endpoint}, returning empty data`);
+          return { data: [], total: 0 };
+        }
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       
       return await response.json();
     } catch (error) {
+      // Si es un error de red o parsing, lanzar el error
+      if (error.message.includes('HTTP error')) {
+        throw error;
+      }
       console.error('API request failed:', error);
       throw error;
     }

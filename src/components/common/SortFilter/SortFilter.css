@@ -1,0 +1,77 @@
+.sort-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sort-filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sort-filter-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sort-filter-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #f5f5f5;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sort-filter-button:hover {
+  background: #fff5f2;
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+
+.sort-filter-button.active {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  border-color: #ff6b35;
+  color: white;
+}
+
+.sort-filter-icon {
+  font-size: 16px;
+}
+
+.sort-filter-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .sort-filter {
+    padding: 12px;
+  }
+
+  .sort-filter-options {
+    gap: 6px;
+  }
+
+  .sort-filter-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .sort-filter-icon {
+    font-size: 14px;
+  }
+}
