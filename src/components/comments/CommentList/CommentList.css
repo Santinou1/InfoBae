@@ -15,3 +15,39 @@
 .comment-skeleton-content {
   flex: 1;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .comment-list {
+    gap: 14px;
+  }
+  
+  .comment-skeleton {
+    padding: 14px;
+    gap: 10px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .comment-list {
+    gap: 12px;
+  }
+  
+  .comment-skeleton {
+    padding: 12px;
+    gap: 8px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .comment-list {
+    gap: 10px;
+  }
+  
+  .comment-skeleton {
+    padding: 10px;
+    gap: 6px;
+  }
+}

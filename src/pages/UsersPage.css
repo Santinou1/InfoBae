@@ -41,3 +41,38 @@
     margin-bottom: 16px;
   }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .users-content {
+    padding: 20px;
+  }
+  
+  .users-title {
+    font-size: 28px;
+  }
+  
+  .users-header {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .users-content {
+    padding: 12px;
+  }
+
+  .users-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .users-header {
+    margin-bottom: 12px;
+  }
+  
+  .users-stats {
+    font-size: 13px;
+  }
+}

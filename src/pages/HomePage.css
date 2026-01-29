@@ -109,3 +109,63 @@
     align-self: flex-end;
   }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 20px;
+  }
+  
+  .home-content {
+    padding: 20px;
+  }
+  
+  .home-filters {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .home-container {
+    padding: 12px;
+  }
+
+  .home-content {
+    padding: 12px;
+  }
+
+  .home-filters {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .home-stats {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+  
+  .home-stats-text {
+    font-size: 13px;
+  }
+  
+  .home-filter-badge {
+    padding: 10px 12px;
+  }
+  
+  .home-filter-text {
+    font-size: 13px;
+  }
+  
+  .home-filter-clear {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  .home-loading-message {
+    padding: 10px 12px;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}

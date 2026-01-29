@@ -16,3 +16,16 @@ body {
 #root {
   min-height: 100vh;
 }
+
+/* Base responsive font sizes */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}

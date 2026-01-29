@@ -10,6 +10,9 @@
   align-items: center;
   padding: 24px;
   text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .user-card:hover {
@@ -24,10 +27,12 @@
   object-fit: cover;
   border: 3px solid #ff6b35;
   margin-bottom: 16px;
+  flex-shrink: 0;
 }
 
 .user-card-content {
   width: 100%;
+  min-width: 0;
 }
 
 .user-card-name {
@@ -35,6 +40,8 @@
   font-weight: 600;
   color: #2c2c2c;
   margin: 0 0 8px 0;
+  word-wrap: break-word;
+  line-height: 1.3;
 }
 
 .user-card-email {
@@ -42,4 +49,90 @@
   color: #666;
   margin: 0;
   word-break: break-word;
+  line-height: 1.4;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .user-card {
+    padding: 20px;
+    max-width: 280px;
+  }
+  
+  .user-card-image {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 14px;
+  }
+  
+  .user-card-name {
+    font-size: 17px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .user-card {
+    padding: 18px;
+    max-width: none;
+  }
+  
+  .user-card-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+  }
+  
+  .user-card-name {
+    font-size: 16px;
+  }
+  
+  .user-card-email {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .user-card {
+    padding: 16px;
+  }
+  
+  .user-card-image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-width: 2px;
+  }
+  
+  .user-card-name {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  
+  .user-card-email {
+    font-size: 12px;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 360px) {
+  .user-card {
+    padding: 12px;
+  }
+  
+  .user-card-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+  
+  .user-card-name {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .user-card-email {
+    font-size: 11px;
+  }
 }
