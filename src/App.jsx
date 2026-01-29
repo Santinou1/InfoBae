@@ -3,6 +3,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import { AuthProvider } from './context/AuthContext';
 import { HomePage } from './pages/HomePage';
 import { UsersPage } from './pages/UsersPage';
+import { FavoritesPage } from './pages/FavoritesPage';
 import './App.css';
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
     switch (currentPage) {
       case 'users':
         return <UsersPage />;
+      case 'favorites':
+        return <FavoritesPage />;
       default:
         return <HomePage />;
     }
