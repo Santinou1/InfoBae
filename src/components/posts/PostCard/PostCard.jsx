@@ -1,4 +1,5 @@
 import { ASSETS } from '../../../constants/assets';
+import { FavoriteButton } from '../../common/FavoriteButton/FavoriteButton';
 import './PostCard.css';
 
 export const PostCard = ({ post, onClick, commentsCount }) => {
@@ -15,6 +16,9 @@ export const PostCard = ({ post, onClick, commentsCount }) => {
 
   return (
     <article className="post-card" onClick={() => onClick(post)}>
+      {/* Botón de favorito */}
+      <FavoriteButton postId={post.id} />
+      
       <div className="post-card-image-container">
         <img
           src={post.image || ASSETS.PLACEHOLDER_IMAGE}

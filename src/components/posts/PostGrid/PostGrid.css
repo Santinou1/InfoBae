@@ -5,12 +5,52 @@
   padding: 24px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
+/* Cuando está dentro de un modal, ajustar el grid */
+.modal-body .post-grid {
+  padding: 0;
+  max-width: 100%;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .post-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .modal-body .post-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Large */
 @media (max-width: 768px) {
   .post-grid {
     grid-template-columns: 1fr;
     padding: 16px;
     gap: 16px;
+  }
+  
+  .modal-body .post-grid {
+    padding: 0;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .post-grid {
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .modal-body .post-grid {
+    padding: 0;
+    gap: 12px;
   }
 }

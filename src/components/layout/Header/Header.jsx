@@ -42,6 +42,18 @@ export const Header = () => {
           >
             Usuarios
           </a>
+          {isAuthenticated && (
+            <a 
+              href="#" 
+              className="header-link"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavigation('favorites');
+              }}
+            >
+              ❤️ Favoritos
+            </a>
+          )}
           
           {isAuthenticated && (
             <div className="header-user">

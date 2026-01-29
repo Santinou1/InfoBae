@@ -9,25 +9,34 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     // Verificar si hay usuario guardado en localStorage
     const savedUser = localStorage.getItem('user');
-    if (savedUser) {
+    const savedToken = localStorage.getItem('googleToken');
+    
+    if (savedUser && savedToken) {
       try {
         setUser(JSON.parse(savedUser));
       } catch (error) {
         console.error('Error parsing saved user:', error);
         localStorage.removeItem('user');
+        localStorage.removeItem('googleToken');
       }
     }
     setLoading(false);
   }, []);
 
-  const login = (userData) => {
+  const login = (userData, token) => {
     setUser(userData);
     localStorage.setItem('user', JSON.stringify(userData));
+    
+    // Guardar el token de Google para el backend
+    if (token) {
+      localStorage.setItem('googleToken', token);
+    }
   };
 
   const logout = () => {
     setUser(null);
     localStorage.removeItem('user');
+    localStorage.removeItem('googleToken');
   };
 
   const value = {

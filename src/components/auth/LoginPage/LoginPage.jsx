@@ -21,7 +21,9 @@ export const LoginPage = () => {
       };
 
       console.log('Login successful:', userData);
-      login(userData);
+      
+      // Pasar el token al login para guardarlo
+      login(userData, credentialResponse.credential);
     } catch (error) {
       console.error('Error decoding token:', error);
     }
