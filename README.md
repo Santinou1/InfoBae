@@ -408,10 +408,6 @@ npm run build
 # La carpeta dist/ contiene los archivos estáticos
 ```
 
-### Backend (Render)
-
-Ver [DEPLOYMENT_GUIDE.md](../Infobae-Back/DEPLOYMENT_GUIDE.md) en el repositorio del backend.
-
 ## 🤝 Contribuir
 
 1. Fork el proyecto
