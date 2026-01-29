@@ -194,3 +194,88 @@
     max-height: 240px;
   }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .tag-search-input-container {
+    padding: 10px 14px;
+  }
+  
+  .tag-search-icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .tag-search-input {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .tag-search-input-container {
+    padding: 8px 12px;
+  }
+  
+  .tag-search-icon {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  
+  .tag-search-input {
+    font-size: 14px;
+  }
+  
+  .tag-search-clear {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 6px;
+  }
+  
+  .tag-search-selected {
+    margin-top: 10px;
+    padding: 6px 10px;
+  }
+  
+  .tag-search-selected-label {
+    font-size: 13px;
+  }
+  
+  .tag-search-selected-tag {
+    padding: 3px 10px;
+    font-size: 13px;
+  }
+  
+  .tag-search-dropdown {
+    max-height: 250px;
+  }
+  
+  .tag-search-dropdown-header {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+  
+  .tag-search-list {
+    max-height: 190px;
+    padding: 6px 0;
+  }
+  
+  .tag-search-item {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  
+  .tag-search-item-icon {
+    font-size: 16px;
+  }
+  
+  .tag-search-item-text {
+    font-size: 14px;
+  }
+  
+  .tag-search-empty {
+    padding: 20px 12px;
+    font-size: 13px;
+  }
+}

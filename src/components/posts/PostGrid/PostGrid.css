@@ -7,10 +7,28 @@
   margin: 0 auto;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .post-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* Mobile Large */
 @media (max-width: 768px) {
   .post-grid {
     grid-template-columns: 1fr;
     padding: 16px;
     gap: 16px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .post-grid {
+    padding: 12px;
+    gap: 12px;
   }
 }

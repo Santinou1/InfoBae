@@ -28,3 +28,72 @@
   color: #666;
   max-width: 400px;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .empty-state {
+    padding: 40px 20px;
+    min-height: 350px;
+  }
+  
+  .empty-state-image {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .empty-state-title {
+    font-size: 22px;
+  }
+  
+  .empty-state-description {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .empty-state {
+    padding: 32px 16px;
+    min-height: 300px;
+  }
+  
+  .empty-state-image {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 16px;
+  }
+  
+  .empty-state-title {
+    font-size: 20px;
+  }
+  
+  .empty-state-description {
+    font-size: 14px;
+    max-width: 350px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .empty-state {
+    padding: 24px 12px;
+    min-height: 250px;
+  }
+  
+  .empty-state-image {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 12px;
+  }
+  
+  .empty-state-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  
+  .empty-state-description {
+    font-size: 13px;
+    max-width: 300px;
+  }
+}

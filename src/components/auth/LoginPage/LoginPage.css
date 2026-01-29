@@ -138,3 +138,58 @@
     font-size: 14px;
   }
 }
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 12px;
+  }
+
+  .login-container {
+    border-radius: 12px;
+  }
+
+  .login-header {
+    padding: 20px 12px;
+  }
+
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .login-subtitle {
+    font-size: 14px;
+  }
+
+  .login-illustration {
+    padding: 20px;
+  }
+
+  .login-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .login-content {
+    padding: 20px 12px;
+  }
+
+  .login-welcome {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .login-description {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .login-info {
+    padding: 12px;
+  }
+
+  .login-info-text {
+    font-size: 13px;
+  }
+}

@@ -52,3 +52,71 @@
   margin: 0;
   word-wrap: break-word;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .comment-card {
+    padding: 14px;
+    gap: 10px;
+  }
+  
+  .comment-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .comment-card {
+    padding: 12px;
+    gap: 8px;
+  }
+  
+  .comment-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .comment-author {
+    font-size: 13px;
+  }
+  
+  .comment-date {
+    font-size: 11px;
+  }
+  
+  .comment-message {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .comment-card {
+    padding: 10px;
+    gap: 6px;
+  }
+  
+  .comment-avatar {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .comment-header {
+    margin-bottom: 6px;
+    gap: 8px;
+  }
+  
+  .comment-author {
+    font-size: 12px;
+  }
+  
+  .comment-date {
+    font-size: 10px;
+  }
+  
+  .comment-message {
+    font-size: 12px;
+  }
+}

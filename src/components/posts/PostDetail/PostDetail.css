@@ -131,3 +131,147 @@
     align-self: flex-start;
   }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .post-detail {
+    gap: 20px;
+  }
+  
+  .post-detail-image-container {
+    max-height: 350px;
+  }
+  
+  .post-detail-content {
+    gap: 14px;
+  }
+  
+  .post-detail-avatar {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .post-detail-author-name {
+    font-size: 15px;
+  }
+  
+  .post-detail-date {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Large - Enhanced */
+@media (max-width: 768px) {
+  .post-detail {
+    gap: 16px;
+  }
+  
+  .post-detail-image-container {
+    max-height: 300px;
+  }
+  
+  .post-detail-content {
+    gap: 12px;
+  }
+  
+  .post-detail-tag {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+  
+  .post-detail-text {
+    font-size: 15px;
+  }
+  
+  .post-detail-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .post-detail-author-name {
+    font-size: 14px;
+  }
+  
+  .post-detail-date {
+    font-size: 12px;
+  }
+  
+  .post-detail-likes {
+    padding: 6px 12px;
+  }
+  
+  .post-detail-likes-icon {
+    font-size: 18px;
+  }
+  
+  .post-detail-likes-count {
+    font-size: 15px;
+  }
+  
+  .post-detail-comments-title {
+    font-size: 18px;
+  }
+
+  .post-detail-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .post-detail-likes {
+    align-self: flex-start;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .post-detail {
+    gap: 12px;
+  }
+  
+  .post-detail-image-container {
+    max-height: 250px;
+  }
+  
+  .post-detail-content {
+    gap: 10px;
+  }
+  
+  .post-detail-tag {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+  
+  .post-detail-text {
+    font-size: 14px;
+  }
+  
+  .post-detail-avatar {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .post-detail-author-name {
+    font-size: 13px;
+  }
+  
+  .post-detail-date {
+    font-size: 11px;
+  }
+  
+  .post-detail-likes {
+    padding: 5px 10px;
+  }
+  
+  .post-detail-likes-icon {
+    font-size: 16px;
+  }
+  
+  .post-detail-likes-count {
+    font-size: 14px;
+  }
+  
+  .post-detail-comments-title {
+    font-size: 16px;
+  }
+}
