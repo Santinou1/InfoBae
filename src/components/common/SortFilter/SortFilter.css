@@ -75,3 +75,31 @@
     font-size: 14px;
   }
 }
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .sort-filter {
+    padding: 10px;
+  }
+  
+  .sort-filter-label {
+    font-size: 13px;
+  }
+  
+  .sort-filter-options {
+    gap: 4px;
+  }
+  
+  .sort-filter-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .sort-filter-icon {
+    font-size: 13px;
+  }
+  
+  .sort-filter-text {
+    font-size: 12px;
+  }
+}

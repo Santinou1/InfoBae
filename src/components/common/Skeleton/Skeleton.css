@@ -42,3 +42,39 @@
 .mt-sm {
   margin-top: 8px;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .skeleton-card-content {
+    padding: 14px;
+  }
+  
+  .skeleton-card-footer {
+    gap: 10px;
+    margin-top: 14px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .skeleton-card-content {
+    padding: 12px;
+  }
+  
+  .skeleton-card-footer {
+    gap: 8px;
+    margin-top: 12px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .skeleton-card-content {
+    padding: 10px;
+  }
+  
+  .skeleton-card-footer {
+    gap: 6px;
+    margin-top: 10px;
+  }
+}

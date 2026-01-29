@@ -54,3 +54,11 @@
     gap: 12px;
   }
 }
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .post-grid {
+    padding: 12px;
+    gap: 12px;
+  }
+}

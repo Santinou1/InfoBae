@@ -7,10 +7,38 @@
   margin: 0 auto;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .user-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* Mobile Large */
 @media (max-width: 768px) {
   .user-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     padding: 16px;
     gap: 16px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .user-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    padding: 12px;
+    gap: 12px;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 360px) {
+  .user-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
   }
 }

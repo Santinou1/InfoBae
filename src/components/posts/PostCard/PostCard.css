@@ -6,6 +6,9 @@
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .post-card:hover {
@@ -34,6 +37,7 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  max-width: calc(100% - 24px);
 }
 
 .post-card-tag {
@@ -43,6 +47,7 @@
   border-radius: 16px;
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .post-card-content {
@@ -58,6 +63,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-wrap: break-word;
 }
 
 .post-card-footer {
@@ -167,6 +173,7 @@
 @media (max-width: 768px) {
   .post-card {
     max-width: 100%;
+    max-width: none;
   }
   
   .post-card-image-container {

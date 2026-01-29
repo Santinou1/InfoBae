@@ -209,3 +209,129 @@
     gap: 12px;
   }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .user-detail {
+    gap: 20px;
+  }
+  
+  .user-detail-header {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .user-detail-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .user-detail-name {
+    font-size: 24px;
+  }
+  
+  .user-detail-email {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .user-detail {
+    gap: 16px;
+  }
+  
+  .user-detail-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .user-detail-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .user-detail-name {
+    font-size: 22px;
+  }
+  
+  .user-detail-email {
+    font-size: 14px;
+  }
+  
+  .user-detail-birth,
+  .user-detail-phone {
+    font-size: 13px;
+  }
+  
+  .user-detail-location {
+    padding: 14px;
+  }
+  
+  .user-detail-section-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .user-detail-location-text {
+    font-size: 13px;
+  }
+  
+  .user-detail-posts {
+    gap: 14px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .user-detail {
+    gap: 12px;
+  }
+  
+  .user-detail-header {
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .user-detail-avatar {
+    width: 70px;
+    height: 70px;
+    border-width: 3px;
+  }
+  
+  .user-detail-name {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  
+  .user-detail-email {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  
+  .user-detail-birth,
+  .user-detail-phone {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+  
+  .user-detail-location {
+    padding: 12px;
+  }
+  
+  .user-detail-section-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .user-detail-location-text {
+    font-size: 12px;
+  }
+  
+  .user-detail-posts {
+    gap: 12px;
+  }
+}
