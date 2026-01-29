@@ -1,7 +1,10 @@
 // Assets constants for reusability
+// Importar assets para que Vite los procese correctamente
+import placeholderImage from '../assets/image.png';
+
 export const ASSETS = {
-  PLACEHOLDER_IMAGE: '/src/assets/image.png',
-  LOGO: '/src/assets/logo.svg',
+  PLACEHOLDER_IMAGE: placeholderImage,
+  LOGO: '/vite.svg', // Este está en public/
 };
 
 export const COLORS = {
