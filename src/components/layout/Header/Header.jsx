@@ -1,10 +1,18 @@
+import { useAuth } from '../../../context/AuthContext';
 import './Header.css';
 
 export const Header = () => {
+  const { user, logout, isAuthenticated } = useAuth();
+
   const handleNavigation = (page) => {
     if (window.navigateTo) {
       window.navigateTo(page);
     }
+  };
+
+  const handleLogout = () => {
+    logout();
+    handleNavigation('posts');
   };
 
   return (
@@ -34,6 +42,24 @@ export const Header = () => {
           >
             Usuarios
           </a>
+          
+          {isAuthenticated && (
+            <div className="header-user">
+              <img 
+                src={user.picture} 
+                alt={user.name}
+                className="header-user-avatar"
+              />
+              <span className="header-user-name">{user.givenName}</span>
+              <button 
+                className="header-logout"
+                onClick={handleLogout}
+                title="Cerrar sesión"
+              >
+                Salir
+              </button>
+            </div>
+          )}
         </nav>
       </div>
     </header>

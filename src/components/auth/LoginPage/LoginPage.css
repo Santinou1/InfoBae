@@ -1,0 +1,140 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  padding: 24px;
+}
+
+.login-container {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-header {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.login-illustration {
+  padding: 32px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.login-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.login-content {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.login-welcome {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0 0 12px 0;
+}
+
+.login-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 32px 0;
+}
+
+.login-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.login-info {
+  padding: 16px;
+  background: #fff5f2;
+  border-radius: 12px;
+  border: 1px solid #ffe8df;
+}
+
+.login-info-text {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-container {
+    border-radius: 16px;
+  }
+
+  .login-header {
+    padding: 24px 16px;
+  }
+
+  .login-title {
+    font-size: 28px;
+  }
+
+  .login-illustration {
+    padding: 24px;
+  }
+
+  .login-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .login-content {
+    padding: 24px 16px;
+  }
+
+  .login-welcome {
+    font-size: 24px;
+  }
+
+  .login-description {
+    font-size: 14px;
+  }
+}
