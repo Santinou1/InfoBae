@@ -399,14 +399,27 @@ curl http://localhost:3454
 
 ## 🚀 Despliegue
 
-### Frontend (Vercel/Netlify)
+### Frontend (GitHub Pages)
+
+Ver la guía completa paso a paso: **[DEPLOYMENT_GITHUB.md](./DEPLOYMENT_GITHUB.md)**
+
+**Resumen rápido:**
+1. Sube el código a GitHub
+2. Configura los secrets en GitHub (Settings → Secrets)
+3. Habilita GitHub Pages (Settings → Pages → Source: GitHub Actions)
+4. Agrega la URL de GitHub Pages a Google OAuth
+5. Haz push y se desplegará automáticamente
 
 ```bash
-# Build
+# Build local
 npm run build
 
 # La carpeta dist/ contiene los archivos estáticos
 ```
+
+### Backend (Render)
+
+Ver [README.md](../Infobae-Back/README.md) en el repositorio del backend.
 
 ## 🤝 Contribuir
 
